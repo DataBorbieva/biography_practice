@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Author {
 
     /**
@@ -6,8 +8,14 @@ public class Author {
      Define Author class fields as firstName, lastName, country, isAlive, age, list of books
      */
 
+
     //Create 6 args custom constructor here
     //YOUR CODE HERE
+
+    public Author(String firstName, String lastName, String country, boolean isAlive, int age, List<Book> books){
+
+
+    }
 
 
     /*
@@ -15,6 +23,12 @@ public class Author {
         NOTE: Books must be defined as a List of Objects of Book class not String
     */
     //YOUR CODE HERE
+    public String firstName;
+    public String lastName;
+    public String country;
+    public boolean isAlive;
+    public int age;
+    public List<Book> books;
 
 
     /*
@@ -22,4 +36,14 @@ public class Author {
      */
     //YOUR CODE HERE
 
+    @Override
+    public String toString() {
+        return "Author{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", country='" + country + '\'' +
+                ", isAlive=" + isAlive +
+                ", books=" + books +
+                '}';
+    }
 }
