@@ -17,6 +17,9 @@ public class Book {
 
     public Book(String name, String genre, int totalPage){
 
+        this.name = name;
+        this.genre = genre;
+        this.totalPage=totalPage;
     }
 
 

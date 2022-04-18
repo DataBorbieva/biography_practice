@@ -13,6 +13,11 @@ public class Author {
     //YOUR CODE HERE
 
     public Author(String firstName, String lastName, String country, boolean isAlive, int age, List<Book> books){
+     this.firstName = firstName;
+     this.lastName = lastName;
+     this.country = country;
+     this.isAlive = isAlive;
+     this.age = age;
 
 
     }
@@ -36,6 +41,7 @@ public class Author {
      */
     //YOUR CODE HERE
 
+
     @Override
     public String toString() {
         return "Author{" +
@@ -43,7 +49,9 @@ public class Author {
                 ", lastName='" + lastName + '\'' +
                 ", country='" + country + '\'' +
                 ", isAlive=" + isAlive +
+                ", age=" + age +
                 ", books=" + books +
                 '}';
     }
 }
+

@@ -77,8 +77,11 @@ public class Biography {
 
         System.out.println(author);
         for (Book book : author.books) {
-            System.out.println(book);
+            System.out.println(book);   // the last expected output is not printing me the book info ,
         }
+        /*Exception in thread "main" java.lang.NullPointerException
+	at Biography.main(Biography.java:79)
+*/
 
     }
 
