@@ -1,6 +1,7 @@
-import java.util.List;
+import java.util.ArrayList;
 
 public class Author {
+
 
     /**
      * WORK ON BOOK CLASS FIRST
@@ -8,32 +9,26 @@ public class Author {
      Define Author class fields as firstName, lastName, country, isAlive, age, list of books
      */
 
-
     //Create 6 args custom constructor here
     //YOUR CODE HERE
-
-    public Author(String firstName, String lastName, String country, boolean isAlive, int age, List<Book> books){
-     this.firstName = firstName;
-     this.lastName = lastName;
-     this.country = country;
-     this.isAlive = isAlive;
-     this.age = age;
-
-
+    public Author(String firstName, String lastName, String country, boolean isAlive, int age, ArrayList<Book> books) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.country = country;
+        this.isAlive = isAlive;
+        this.age = age;
+        this.books = books;
     }
-
 
     /*
         Define instance variables here
         NOTE: Books must be defined as a List of Objects of Book class not String
     */
     //YOUR CODE HERE
-    public String firstName;
-    public String lastName;
-    public String country;
+    public String firstName, lastName, country;
     public boolean isAlive;
     public int age;
-    public List<Book> books;
+    public ArrayList<Book> books;
 
 
     /*
@@ -49,9 +44,7 @@ public class Author {
                 ", lastName='" + lastName + '\'' +
                 ", country='" + country + '\'' +
                 ", isAlive=" + isAlive +
-                ", age=" + age +
-                ", books=" + books +
+                (isAlive ? ", age=" + age : "") +
                 '}';
     }
 }
-
